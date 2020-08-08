@@ -18,9 +18,7 @@ class EmailAddressParser
     @email_addresses.split(" ").collect do |email|
       email.gsub(",", "")
     end.flatten.uniq
-    
-  
-  end
+end
   
   
   
