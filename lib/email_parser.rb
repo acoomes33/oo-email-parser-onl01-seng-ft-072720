@@ -10,11 +10,15 @@ class EmailAddressParser
   end
   
   def parse
-    if @email_addresses.include?(", ")
-      @email_addresses.split(", ").flatten.uniq
-    else
-      @email_addresses.split(" ").flatten.uniq
+    # if @email_addresses.include?(", ")
+    #   @email_addresses.split(", ").flatten.uniq
+    # else
+    #   @email_addresses.split(" ").flatten.uniq
+    # end
+    @email_addresses.split(" ").collect do |email|
+      email.
     end
+  
   end
   
   
